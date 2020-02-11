@@ -1,4 +1,4 @@
-import Result from './Result';
+import Result from 'models/Result';
 
 export default class ApiCall {
   url: string;

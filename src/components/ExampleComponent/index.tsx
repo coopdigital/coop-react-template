@@ -3,7 +3,7 @@ import useStores from 'hooks/useStores';
 import { observer } from 'mobx-react';
 import ExampleStore from 'stores/ExampleStore';
 
-export const Basket = observer(() => {
+const ExampleComponent = observer(() => {
   const { exampleStore }: { exampleStore: ExampleStore } = useStores();
 
   useEffect(() => {
@@ -18,4 +18,4 @@ export const Basket = observer(() => {
   );
 });
 
-export default Basket;
+export default ExampleComponent;

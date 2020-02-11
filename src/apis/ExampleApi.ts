@@ -1,5 +1,5 @@
 import ApiCall from './ApiCall';
-import Result from './Result';
+import Result from 'models/Result';
 
 export default class ExampleApi extends ApiCall {
   constructor() {

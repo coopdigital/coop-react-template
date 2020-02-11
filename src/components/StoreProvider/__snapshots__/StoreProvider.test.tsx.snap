@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoreProvider Render 1`] = `
+<StoreProvider>
+  <MockComponent>
+    <div>
+      TEST_CONTENT
+    </div>
+  </MockComponent>
+</StoreProvider>
+`;

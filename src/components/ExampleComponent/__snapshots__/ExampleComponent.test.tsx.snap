@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExampleComponent Render 1`] = `
+<div>
+  <div>
+    TEST_QUOTE
+  </div>
+  <div>
+    TEST_AUTHOR
+  </div>
+</div>
+`;
