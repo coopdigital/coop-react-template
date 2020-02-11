@@ -1,0 +1,17 @@
+@value colours: "App.css";
+@value blue, white from colours;
+
+.mainPage {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header {
+  background-color: blue;
+  color: white;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  align-items: center;
+}

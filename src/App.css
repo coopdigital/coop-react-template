@@ -1,0 +1,37 @@
+@value blue: #1D2534;
+@value brightblue: #418CFC;
+@value white: #FFFFFF;
+@value red: #D63118;
+@value promored: #CF043C;
+@value lightred: #f6bbb2;
+@value yellow: #FFD308;
+@value lightyellow: #fff1b2;
+@value green: #4F820D;
+@value lightgreen:#e4f9c7;
+
+/* Additions to the Coop Digital Styles */
+button:disabled,
+button[disabled] {
+  background: #eafdfc !important;
+}
+
+.coop-btn-red {
+  background: #d63118;
+}
+
+.coop-btn-red:hover {
+  background: #e74229;
+}
+
+.coop-btn-small {
+  width: initial;
+  padding: var(--spacing-base--1-4) calc(var(--spacing-base--1-4) * 1.25);
+}
+
+.coop-total-table {
+  width: initial;
+}
+
+.coop-total-table-column {
+  text-align: right;
+}
