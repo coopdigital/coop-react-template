@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExampleApi getQuote 1`] = `
+Object {
+  "contents": Object {
+    "quotes": Array [
+      Object {
+        "author": "Dale Patridge",
+        "quote": "Stop complaining. Start creating.",
+      },
+    ],
+  },
+}
+`;
