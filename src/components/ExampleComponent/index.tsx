@@ -10,7 +10,7 @@ const ExampleComponent = observer(() => {
 
   useEffect(() => {
     exampleStore.getNewQuote();
-  }, []);
+  });
 
   return (
     <div className={styles['example-component']}>
