@@ -15,6 +15,7 @@ const App: React.FC = () => {
         <header className={styles['header']}>
           <a className="coop-logo-link" aria-label="Homepage" href="/">
             <svg
+              className={styles['logo']}
               xmlns="http://www.w3.org/2000/svg"
               width="38"
               height="40"

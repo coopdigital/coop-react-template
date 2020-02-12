@@ -3,6 +3,8 @@ import useStores from 'hooks/useStores';
 import { observer } from 'mobx-react';
 import ExampleStore from 'stores/ExampleStore';
 
+import styles from './ExampleComponent.module.css';
+
 const ExampleComponent = observer(() => {
   const { exampleStore }: { exampleStore: ExampleStore } = useStores();
 
@@ -11,9 +13,9 @@ const ExampleComponent = observer(() => {
   }, []);
 
   return (
-    <div>
-      <div>{exampleStore.quote}</div>
-      <div>{exampleStore.author}</div>
+    <div className={styles['example-component']}>
+      <div className={styles['quote']}>{exampleStore.quote}</div>
+      <div className={styles['author']}>{exampleStore.author}</div>
     </div>
   );
 });

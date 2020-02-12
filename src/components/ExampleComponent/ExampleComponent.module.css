@@ -1,0 +1,15 @@
+.example-component {
+  display: grid;
+  max-width: 700px;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+}
