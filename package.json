@@ -15,10 +15,10 @@
     "typescript": "3.7.2"
   },
   "scripts": {
-    "start": "cross-env NODE_PATH=src react-scripts start",
-    "build": "cross-env NODE_PATH=src react-scripts build",
-    "test": "cross-env NODE_PATH=src  react-scripts test",
-    "test:ci": "cross-env CI=true NODE_PATH=src react-scripts test --env=jsdom --reporters ./node_modules/jest-junit --coverage --coverageDirectory=test/coverage",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "cross-env CI=true react-scripts test --env=jsdom --reporters ./node_modules/jest-junit --coverage --coverageDirectory=test/coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
