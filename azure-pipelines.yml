@@ -21,7 +21,6 @@ steps:
     npm run build
   displayName: 'npm install and build'
 - task: WhiteSource Bolt@20
-  inputs:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
