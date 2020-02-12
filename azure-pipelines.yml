@@ -30,7 +30,6 @@ steps:
   inputs:
     codeCoverageTool: 'Cobertura'
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/test/coverage/cobertura-coverage.xml'
-    reportDirectory: '$(System.DefaultWorkingDirectory)/test/coverage/lcov-report-inline'
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: 'build'
