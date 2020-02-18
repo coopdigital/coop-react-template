@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import useStores from 'hooks/useStores';
 import { observer } from 'mobx-react';
-import ExampleStore from 'stores/ExampleStore';
 
 import styles from './ExampleComponent.module.css';
 
-const ExampleComponent = observer(() => {
-  const { exampleStore }: { exampleStore: ExampleStore } = useStores();
+type Props = {
+  showAuthor: boolean;
+};
+
+const ExampleComponent = observer(({ showAuthor }: Props) => {
+  const { exampleStore } = useStores();
 
   useEffect(() => {
     exampleStore.getNewQuote();
@@ -15,7 +18,9 @@ const ExampleComponent = observer(() => {
   return (
     <div className={styles['example-component']}>
       <div className={styles['quote']}>{exampleStore.quote}</div>
-      <div className={styles['author']}>{exampleStore.author}</div>
+      {showAuthor && (
+        <div className={styles['author']}>{exampleStore.author}</div>
+      )}
     </div>
   );
 });

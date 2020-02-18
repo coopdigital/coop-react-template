@@ -4,6 +4,8 @@ exports[`ExamplePage Render 1`] = `
 <div
   className="example-page-grid"
 >
-  <Memo(wrappedComponent) />
+  <Memo(wrappedComponent)
+    showAuthor={true}
+  />
 </div>
 `;

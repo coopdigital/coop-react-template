@@ -5,7 +5,7 @@ import styles from './ExamplePage.module.css';
 const ExamplePage: React.FC = () => {
   return (
     <div className={styles['example-page-grid']}>
-      <ExampleComponent />
+      <ExampleComponent showAuthor={true} />
     </div>
   );
 };

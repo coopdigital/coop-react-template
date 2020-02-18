@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExampleComponent Render 1`] = `
+exports[`ExampleComponent Render - showAuthor = false 1`] = `
+<div
+  className="example-component"
+>
+  <div
+    className="quote"
+  >
+    TEST_QUOTE
+  </div>
+</div>
+`;
+
+exports[`ExampleComponent Render - showAuthor = true 1`] = `
 <div
   className="example-component"
 >
