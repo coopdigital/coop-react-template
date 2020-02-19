@@ -34,6 +34,16 @@ npm install
 npm start
 ```
 
+> **Check for any new security vulnerabilities**
+>
+> ```
+> npm audit
+> ```
+>
+> For issues cause by outdated packages run `npm audit fix` to resolve the issues.
+>
+> To ensure that the template stays up to date please submit `Pull` requests when security issue are found.
+
 ### Set the project name in the following locations
 
 - `public/index.html` - `<meta name="description">` and `<title>`
