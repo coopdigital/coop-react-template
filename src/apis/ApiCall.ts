@@ -43,7 +43,9 @@ export default class ApiCall {
       if (response.body !== null) {
         try {
           data = await response.json();
-        } catch (err) {}
+        } catch (err) {
+          // Non JSON body
+        }
       }
 
       result.success = true;

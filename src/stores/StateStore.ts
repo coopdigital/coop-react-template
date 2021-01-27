@@ -1,12 +1,12 @@
 import { decorate, observable } from 'mobx';
+import RootStore from './RootStore';
+import Store from './Store';
 
-class StateStore {
-  rootStore;
+class StateStore extends Store {
   state;
 
-  constructor(rootStore) {
-    this.rootStore = rootStore;
-
+  constructor(rootStore: RootStore) {
+    super(rootStore);
     this.state = 'initial';
   }
 }

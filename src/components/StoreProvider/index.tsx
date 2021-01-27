@@ -3,7 +3,11 @@ import { createRootStore } from 'stores/RootStore';
 
 export const storeContext = React.createContext(null);
 
-export const StoreProvider: React.FC = ({ children }) => {
+type Props = {
+  children: React.ReactNode;
+};
+
+export const StoreProvider: React.FC<Props> = ({ children }: Props) => {
   const store = createRootStore();
 
   return (
