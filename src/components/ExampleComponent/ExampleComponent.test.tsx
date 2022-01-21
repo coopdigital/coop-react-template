@@ -13,8 +13,8 @@ describe('ExampleComponent', () => {
       return {
         exampleStore: {
           quote: 'TEST_QUOTE',
-          author: 'TEST_AUTHOR'
-        }
+          author: 'TEST_AUTHOR',
+        },
       };
     });
 
@@ -28,8 +28,8 @@ describe('ExampleComponent', () => {
       return {
         exampleStore: {
           quote: 'TEST_QUOTE',
-          author: 'TEST_AUTHOR'
-        }
+          author: 'TEST_AUTHOR',
+        },
       };
     });
 
@@ -44,8 +44,8 @@ describe('ExampleComponent', () => {
     (useStores as jest.Mock).mockImplementation(() => {
       return {
         exampleStore: {
-          getNewQuote: getQuoteMock
-        }
+          getNewQuote: getQuoteMock,
+        },
       };
     });
 

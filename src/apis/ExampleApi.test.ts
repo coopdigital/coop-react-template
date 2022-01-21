@@ -9,11 +9,11 @@ describe('ExampleApi', () => {
           quotes: [
             {
               quote: 'Stop complaining. Start creating.',
-              author: 'Dale Patridge'
-            }
-          ]
-        }
-      })
+              author: 'Dale Patridge',
+            },
+          ],
+        },
+      }),
     };
     fetchMock.get('*', testData);
 
@@ -29,7 +29,7 @@ describe('ExampleApi', () => {
   it('handle fetch http errors', async () => {
     const testData = {
       body: JSON.stringify({ Message: 'Bad Response' }),
-      status: 404
+      status: 404,
     };
     fetchMock.get('*', testData);
 

@@ -1,3 +1,14 @@
 {
-  "jest.autoEnable": false
+  "jest.autoEnable": false,
+  "terminal.integrated.allowChords": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "jest.jestCommandLine": "npm run test --"
 }

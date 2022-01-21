@@ -6,7 +6,7 @@ try {
 } catch (error) {
   // Use local config if global not found
   env = {
-    EXAMPLE_API_URL: 'http://quotes.rest/'
+    EXAMPLE_API_URL: 'http://quotes.rest/',
   };
 }
 

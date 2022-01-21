@@ -4,22 +4,24 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "@types/jest": "26.0.15",
-    "@types/node": "12.19.6",
-    "@types/react": "^16.14.1",
-    "@types/react-dom": "^16.9.10",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^4.0.1",
-    "react-select": "^3.0.8",
-    "typescript": "^4.1.2"
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.10",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "node-fetch": "^2.6.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0",
+    "react-select": "^5.2.2",
+    "typescript": "^4.5.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test --env=jsdom --reporters ./node_modules/jest-junit --coverage --coverageDirectory=test/coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts,.tsx --fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,25 +39,24 @@
     ]
   },
   "devDependencies": {
-    "@coopdigital/css-foundations": "^2.0.5",
+    "@coopdigital/css-foundations": "^7.1.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.7",
-    "@typescript-eslint/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/parser": "^2.9.0",
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
-    "cross-env": "^6.0.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
-    "enzyme-to-json": "^3.4.4",
-    "eslint-config-prettier": "^6.7.0",
+    "enzyme-to-json": "^3.6.2",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-react": "^1.1.7",
-    "eslint-plugin-prettier": "^3.1.1",
-    "fetch-mock": "^9.0.0-beta.2",
-    "jest-junit": "^10.0.0",
-    "mobx": "^5.15.4",
-    "mobx-react": "^6.1.4",
-    "node-fetch": "^2.6.1",
-    "prettier": "^1.19.1"
+    "eslint-plugin-prettier": "^4.0.0",
+    "fetch-mock": "^9.11.0",
+    "jest-junit": "^13.0.0",
+    "mobx": "^6.3.12",
+    "mobx-react": "^7.2.1",
+    "prettier": "^2.5.1"
   },
   "jest": {
     "coverageReporters": [

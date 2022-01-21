@@ -1,4 +1,4 @@
-import { decorate, observable } from 'mobx';
+import { makeObservable, observable } from 'mobx';
 import RootStore from './RootStore';
 import Store from './Store';
 
@@ -8,11 +8,10 @@ class StateStore extends Store {
   constructor(rootStore: RootStore) {
     super(rootStore);
     this.state = 'initial';
+    makeObservable(this, {
+      state: observable,
+    });
   }
 }
-
-decorate(StateStore, {
-  state: observable
-});
 
 export default StateStore;

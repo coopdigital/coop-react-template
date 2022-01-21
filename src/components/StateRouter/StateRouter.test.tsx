@@ -10,8 +10,8 @@ describe('StateRouter', () => {
     (useStores as jest.Mock).mockImplementation(() => {
       return {
         stateStore: {
-          state: 'initial'
-        }
+          state: 'initial',
+        },
       };
     });
 

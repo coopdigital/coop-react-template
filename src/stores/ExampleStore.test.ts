@@ -16,13 +16,13 @@ describe('ExampleStore', () => {
               quotes: [
                 {
                   quote: 'TEST_QUOTE',
-                  author: 'TEST_AUTHOR'
-                }
-              ]
-            }
-          }
+                  author: 'TEST_AUTHOR',
+                },
+              ],
+            },
+          },
         };
-      })
+      }),
     };
 
     const exampleStore = new ExampleStore(mockRootStore, mockApi);
@@ -37,9 +37,9 @@ describe('ExampleStore', () => {
     const mockApi = {
       getQuote: jest.fn(() => {
         return {
-          success: false
+          success: false,
         };
-      })
+      }),
     };
 
     const exampleStore = new ExampleStore(mockRootStore, mockApi);

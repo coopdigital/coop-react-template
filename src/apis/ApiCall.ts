@@ -23,8 +23,8 @@ export default class ApiCall {
           body: JSON.stringify(body),
           headers: new Headers({
             'Content-Type': 'application/json',
-            Accept: 'application/json'
-          })
+            Accept: 'application/json',
+          }),
         };
       } else {
         fetchOptions = { method: operation };
